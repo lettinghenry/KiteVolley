@@ -15,18 +15,18 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.app.ActivityCompat
-import com.lhenry.flightcontrol.databinding.MainScreenBinding
+import com.lhenry.flightcontrol.databinding.MainActivityBinding
 import com.lhenry.flightcontrol.ui.theme.FlightControlTheme
 import kotlin.properties.Delegates
 
 
 class MainActivity : ComponentActivity() {
 
-    private lateinit var mainBinding: MainScreenBinding
+    private lateinit var mainBinding: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mainBinding = MainScreenBinding.inflate(layoutInflater)
+        mainBinding = MainActivityBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
         //initialize bluetooth service
@@ -85,7 +85,7 @@ class MainActivity : ComponentActivity() {
 
 
     fun onSuccessFullConnection() {
-        test_makeChanges("Going green . .")
+        test_makeChanges("Bluetooth COM Green for GO ..")
     }
 
 
@@ -109,7 +109,12 @@ class MainActivity : ComponentActivity() {
     }
     
     fun executeProcedure(procedureVal:Int){
+        //TODO Decode procedure to bluetooth bytes for sending
+        //TODO execute read bytes from bluetooth drone device and display output, telemetry, procedures, e.t.c.
 
+
+        mainBinding.txtMainTitle.setTextColor(resources.getColor(R.color.))
+        mainBinding.txtMainTitle.text = prompt
     }
 }
 

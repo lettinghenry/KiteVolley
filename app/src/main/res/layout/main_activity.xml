@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtContent1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CURRENT PROCEDURE - "
+        android:text="PROCEDURE - "
         android:textSize="20sp"
         android:textStyle="bold|italic"
 
