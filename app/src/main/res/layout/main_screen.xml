@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="KITE CONTROLLER"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContent1"
+        app:layout_constraintTop_toBottomOf="@id/txtMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOLTAGE - "
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtContent2"
+        app:layout_constraintTop_toBottomOf="@id/txtContent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CURRENT PROCEDURE - "
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        />
+
+    <TextView
+        android:id="@+id/txtContent3"
+        app:layout_constraintTop_toBottomOf="@id/txtContent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LAST SENT COMMAND - "
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        app:layout_constraintTop_toBottomOf="@id/txtContent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TELEMETRY "
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/txtContent4"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" AccX: AccY: AccZ: \n  X: Y: Z: \n"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
