@@ -75,6 +75,9 @@ class MainActivity : ComponentActivity() {
             } else {
                 //already granted
                 test_makeChanges("Green for GO .. ")
+
+                //execute
+                executeProcedure(1)
             }
 
         }
@@ -104,7 +107,7 @@ class MainActivity : ComponentActivity() {
 
 
     fun test_makeChanges(prompt: String) {
-        mainBinding.txtMainTitle.setTextColor(resources.getColor(R.color.teal_700))
+        mainBinding.txtMainTitle.setTextColor(resources.getColor(R.color.emerald))
         mainBinding.txtMainTitle.text = prompt
     }
     
@@ -113,8 +116,8 @@ class MainActivity : ComponentActivity() {
         //TODO execute read bytes from bluetooth drone device and display output, telemetry, procedures, e.t.c.
 
 
-        mainBinding.txtMainTitle.setTextColor(resources.getColor(R.color.))
-        mainBinding.txtMainTitle.text = prompt
+        mainBinding.txtMainTitle.setTextColor(resources.getColor(R.color.green_sea))
+        mainBinding.txtMainTitle.text = procedureVal.toString()
     }
 }
 
