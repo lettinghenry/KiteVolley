@@ -23,6 +23,7 @@ import java.io.OutputStream
     class FlightControlBluetoothService(
         // handler that gets info from Bluetooth service
         private val handler: Handler
+
     ) {
         private val TAG = this.javaClass.simpleName
 
