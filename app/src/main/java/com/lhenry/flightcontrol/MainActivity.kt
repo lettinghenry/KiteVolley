@@ -72,15 +72,17 @@ class MainActivity : ComponentActivity() {
                 // for ActivityCompat#requestPermissions for more details.
                 startActivityForResult(enableBtIntent, 100)
                 return
-            } else {
-                //already granted
-                test_makeChanges("Green for GO .. ")
-
-                //execute
-                executeProcedure(1)
             }
 
         }
+        else{
+            //already granted
+            test_makeChanges("Green for GO .. ")
+
+            //execute
+            executeProcedure(1)
+        }
+
 
     }
 
